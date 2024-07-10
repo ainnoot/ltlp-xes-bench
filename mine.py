@@ -12,7 +12,7 @@ import sys
 template_to_ltlf = {
 	'response': "G(({arg_0}) -> X(F({arg_1})))",
 	'chain_response': "G(({arg_0}) -> X({arg_1}))",
-    'precedence': "~({arg_1}) W {arg_0}",
+	'precedence': "~({arg_1}) W {arg_0}",
 	'alternate_precedence': "(~({arg_1}) W ({arg_0})) & G({arg_1} -> wX( ~({arg_1}) W {arg_0} ))",
 	'chain_precedence': "G(X({arg_1}) -> {arg_0}) & ~({arg_1})",
 	'succession': "G({arg_0} -> F({arg_1})) & (~({arg_1}) W {arg_0})",
